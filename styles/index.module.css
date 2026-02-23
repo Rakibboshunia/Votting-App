@@ -1,0 +1,123 @@
+.home {
+  width: 70%;
+  margin: 2rem auto;
+}
+
+/* ================= WINNER SECTION ================= */
+
+.winner {
+  margin-block: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.winner_info {
+  background: linear-gradient(135deg, #060733, #6e1db9, #b6005b);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.winner_message {
+  background: linear-gradient(135deg, #060733, #6e1db9, #b6005b);
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+  line-height: 1.6;
+  position: relative;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.winner_message small {
+  font-size: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+/* ================= CANDIDATE LIST ================= */
+
+.candidate_list {
+  background: linear-gradient(135deg, #9c02ad, #6e1db9);
+  font-size: 1rem;
+  padding: 0.6rem 2rem;
+  border-radius: 0.8rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.candidate_list p {
+  font-weight: 600;
+}
+
+.candidate_list span {
+  background-color: #231e39;
+  padding: 0.5rem 0.8rem;
+  margin-left: 0.5rem;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Large Tablet */
+@media screen and (max-width: 1024px) {
+  .home {
+    width: 85%;
+  }
+
+  .winner {
+    grid-template-columns: 1fr;
+  }
+
+  .winner_info {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .home {
+    width: 92%;
+  }
+
+  .winner_message {
+    font-size: 1.1rem;
+    padding: 1.5rem;
+  }
+
+  .winner_message small {
+    font-size: 2.2rem;
+  }
+
+  .candidate_list {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+  .winner_message {
+    font-size: 1rem;
+  }
+
+  .winner_message small {
+    font-size: 1.6rem;
+  }
+
+  .candidate_list span {
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+}

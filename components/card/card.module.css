@@ -1,0 +1,75 @@
+.card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.2rem;
+}
+
+.card_box {
+  background: linear-gradient(135deg, #060733, #6e1db9, #b6005b);
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+  transition: 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+.card_box:hover {
+  transform: translateY(-5px);
+}
+
+/* Smaller Image */
+.image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Compact Info */
+.card_info {
+  margin-top: 0.8rem;
+  line-height: 1.4;
+  color: white;
+}
+
+.card_info h2 {
+  font-size: 1rem;
+  color: #c084fc;
+  margin-bottom: 0.4rem;
+}
+
+.card_info p {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* Vote Number */
+.card_vote {
+  margin-top: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #a855f7;
+}
+
+/* Smaller Button */
+.card_button {
+  margin-top: 0.8rem;
+}
+
+.card_button button {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  border: none;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.card_button button:hover {
+  transform: translateY(-2px);
+}

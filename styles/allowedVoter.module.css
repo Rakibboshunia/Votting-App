@@ -1,0 +1,260 @@
+.createVoter{
+    width: 95%;
+    margin: 0 auto;
+    margin-block: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 2rem;
+}
+
+/* ================= MAIN VOTER CARD ================= */
+
+.voter{
+    background: linear-gradient(145deg, #231E39, #1a1630);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.45);
+    color: #ffffff;
+    padding: 2rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.voter:hover{
+    transform: translateY(-5px);
+}
+
+/* ================= UPLOAD BOX ================= */
+
+.voter__container__box{
+    text-align: center;
+    border: 2px dashed #9a02ac;
+    border-radius: 15px;
+    padding: 2rem;
+    background: rgba(255,255,255,0.03);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.voter__container__box:hover{
+    background: rgba(154,2,172,0.08);
+    border-color: #c026d3;
+}
+
+.voter__container__box p{
+    line-height: 1.2;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+/* ================= INPUT ================= */
+
+.input__container{
+    padding-top:3rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ================= BUTTON ================= */
+
+.Button{
+    text-align: end;
+    margin-top: 1rem;
+}
+
+/* ================= REGISTER SECTION ================= */
+
+.register{
+    background-color: #1f1a35;
+    padding: 1rem;
+    border-radius: .8rem;
+    display: grid;
+    gap: 1rem;
+}
+
+.Candidate{
+    background: linear-gradient(135deg, #9a02ac, #c026d3);
+    padding: .7rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.Candidate:hover{
+    transform: scale(1.05);
+}
+
+.Candidate button{
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* ================= VOTER PREVIEW CARD ================= */
+
+.voterInfo{
+    position: absolute;
+    top: 12rem;
+    left: 3rem;
+    width: 16rem;
+    height: 16rem;
+    padding: 1rem;
+    background: linear-gradient(145deg, #231E39, #1a1630);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    color: #ffffff;
+    text-align: start;
+    animation: fadeIn 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.voterInfo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.voterInfo_paragraph{
+    margin-top: 1rem;
+    background-color: rgba(255,255,255,0.05);
+    border-radius: 20px;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
+}
+
+.voterInfo_paragraph p{
+    line-height: 1.2rem;
+    font-size: 14px;
+}
+
+.voterInfo_paragraph p span{
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+/* ================= SIDE INFO ================= */
+
+.sideInfo{
+    background: linear-gradient(145deg, #221e36, #18142b);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: #ffffff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.sideInfo_box h4{
+    background: linear-gradient(135deg, #9a02ac, #c026d3);
+    padding: .6rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.sideInfo_box .sideInfo_para{
+    background-color: #9501a5;
+    padding: .6rem;
+    border-radius: .5rem;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+.car{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.card_box{
+    line-height: 1.2;
+    border: 2px solid #9a02ac;
+    padding: .6rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    border-radius: .8rem;
+    transition: 0.3s ease;
+    background: rgba(255,255,255,0.02);
+}
+
+.card_box:hover{
+    transform: translateY(-5px);
+    border-color: #c026d3;
+}
+
+.image img{
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+
+/* ================= USER NOTICE ================= */
+
+.createdVorter__info{
+    background: linear-gradient(145deg, #231E39, #1a1630);
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+    color: #ffffff;
+    padding: 2rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.createdVorter__info:hover{
+    transform: translateY(-5px);
+}
+
+.voter_upload_two{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* ================= MEDIA QUERY ================= */
+
+@media screen and (max-width: 45em){
+
+    .createVoter{
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+
+    .voter{
+        width: 100%;
+        padding: 1rem;
+        
+    }
+
+    .input__container{
+        width: 100%;
+    }
+
+    .voterInfo{
+        width: 12rem;
+        height: 12rem;
+        top: 2rem;
+        left: 0rem;
+        cursor: pointer;
+    }
+
+    .voterInfo_paragraph{
+        font-size: 12px;
+    }
+}
